@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham Medium.otf">
+            <string>Gotham-Medium</string>
+            <string>Gotham-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="MyCartTotalCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 10000.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z20-Ug-ObH">
+                        <rect key="frame" x="171" y="25" width="141" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="TOTAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGF-Zu-sfJ">
+                        <rect key="frame" x="19" y="25" width="114" height="21"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9om-QG-nfI">
+                        <rect key="frame" x="148" y="23" width="24" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Cac-mJ-FJf"/>
+                            <constraint firstAttribute="width" constant="24" id="e2D-Xe-5Gf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="9om-QG-nfI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DkP-wm-kNA"/>
+                    <constraint firstItem="Z20-Ug-ObH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="F9g-Qp-fY0"/>
+                    <constraint firstItem="JGF-Zu-sfJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="ITP-GF-zhp"/>
+                    <constraint firstItem="9om-QG-nfI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ict-1F-E5L"/>
+                    <constraint firstAttribute="bottom" secondItem="JGF-Zu-sfJ" secondAttribute="bottom" constant="25" id="Tyr-J0-7Ob"/>
+                    <constraint firstAttribute="trailing" secondItem="Z20-Ug-ObH" secondAttribute="trailing" constant="8" id="U4A-ht-ggZ"/>
+                    <constraint firstItem="Z20-Ug-ObH" firstAttribute="leading" secondItem="JGF-Zu-sfJ" secondAttribute="trailing" constant="38" id="Xs4-aL-clG"/>
+                    <constraint firstItem="9om-QG-nfI" firstAttribute="leading" secondItem="JGF-Zu-sfJ" secondAttribute="trailing" constant="15" id="aCG-Jv-eAF"/>
+                    <constraint firstAttribute="bottom" secondItem="Z20-Ug-ObH" secondAttribute="bottom" constant="25" id="iHv-ON-cDQ"/>
+                    <constraint firstItem="JGF-Zu-sfJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="sHs-to-hjp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelTotalCost" destination="Z20-Ug-ObH" id="mEt-1u-1L9"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="181"/>
+        </tableViewCell>
+    </objects>
+</document>

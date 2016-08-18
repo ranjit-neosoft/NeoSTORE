@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham Medium.otf">
+            <string>Gotham-Medium</string>
+            <string>Gotham-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="42" id="KGk-i7-Jjw" customClass="LeftMenuCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_cart" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-D9-SIZ">
+                        <rect key="frame" x="15" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5wr-R1-8aU"/>
+                            <constraint firstAttribute="width" constant="20" id="yL8-18-cej"/>
+                        </constraints>
+                    </imageView>
+                    <view tag="801" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1s-el-PFB">
+                        <rect key="frame" x="274" y="8" width="25" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UED-mw-pXo">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9137254901960784" green="0.10980392156862745" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="8uE-Xl-QYg"/>
+                            <constraint firstAttribute="width" constant="25" id="Z0D-dU-1C7"/>
+                            <constraint firstItem="UED-mw-pXo" firstAttribute="top" secondItem="j1s-el-PFB" secondAttribute="top" id="bfG-Ri-Mq9"/>
+                            <constraint firstAttribute="trailing" secondItem="UED-mw-pXo" secondAttribute="trailing" id="lew-m5-BCa"/>
+                            <constraint firstAttribute="bottom" secondItem="UED-mw-pXo" secondAttribute="bottom" id="qqJ-Pj-4Vj"/>
+                            <constraint firstItem="UED-mw-pXo" firstAttribute="leading" secondItem="j1s-el-PFB" secondAttribute="leading" id="tnV-8N-Ggb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="12.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEj-8b-bPO">
+                        <rect key="frame" x="46" y="10" width="214" height="21"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LEj-8b-bPO" firstAttribute="leading" secondItem="fZf-D9-SIZ" secondAttribute="trailing" constant="11" id="3xA-Tt-oir"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="j1s-el-PFB" secondAttribute="trailing" constant="13" id="5FY-h8-lqS"/>
+                    <constraint firstItem="fZf-D9-SIZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6XM-4T-Xz7"/>
+                    <constraint firstItem="j1s-el-PFB" firstAttribute="leading" secondItem="LEj-8b-bPO" secondAttribute="trailing" constant="14" id="76h-hA-dQQ"/>
+                    <constraint firstItem="fZf-D9-SIZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GFI-H7-q0H"/>
+                    <constraint firstItem="j1s-el-PFB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Vqu-lV-eha"/>
+                    <constraint firstItem="LEj-8b-bPO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Yyo-5Z-dLw"/>
+                    <constraint firstAttribute="bottom" secondItem="LEj-8b-bPO" secondAttribute="bottom" constant="10" id="ifH-8K-O9s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="leftMenuIconImageView" destination="fZf-D9-SIZ" id="6NE-HE-jNP"/>
+                <outlet property="leftMenuItemName" destination="LEj-8b-bPO" id="qWm-x2-hvj"/>
+                <outlet property="leftMenuMyCartQuantity" destination="UED-mw-pXo" id="inj-jF-7p9"/>
+                <outlet property="leftMenuMyCartQuantityView" destination="j1s-el-PFB" id="hYO-AC-9fe"/>
+            </connections>
+            <point key="canvasLocation" x="446" y="309"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="my_cart" width="26" height="26"/>
+    </resources>
+</document>
